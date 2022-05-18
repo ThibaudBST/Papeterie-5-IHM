@@ -1,0 +1,258 @@
+JFDML JFormDesigner: "7.0.5.4.420" Java: "11.0.14.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.intellij.uiDesigner.core.GridLayoutManager ) {
+			"$columnCount": 27
+			"$rowCount": 17
+			"hGap": 7
+			"vGap": 7
+		} ) {
+			name: "this"
+			"foreground": sfield java.awt.Color lightGray
+			"resizable": false
+			"minimumSize": new java.awt.Dimension( 640, 475 )
+			"$locationPolicy": 1
+			"title": "Catalogue"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblReference"
+				"text": "Référénce"
+				"foreground": sfield java.awt.Color red
+				"background": sfield java.awt.Color lightGray
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 1
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtReference"
+				"foreground": sfield java.awt.Color white
+				"background": &ColorUIResource0 new javax.swing.plaf.ColorUIResource( 252, 252, 250 )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 1
+				"colSpan": 4
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblDesignation"
+				"text": "Désignation"
+				"background": sfield java.awt.Color red
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 2
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtDesignation"
+				"foreground": sfield java.awt.Color white
+				"background": #ColorUIResource0
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 2
+				"colSpan": 4
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblMarque"
+				"text": "Marque"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 3
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtMarque"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 3
+				"colSpan": 4
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblStock"
+				"text": "Stock"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 4
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtStock"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 4
+				"colSpan": 4
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblPrix"
+				"text": "Prix"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 5
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtPrix"
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 5
+				"colSpan": 4
+				"fill": 1
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblType"
+				"text": "Type"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 6
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButtonRamette"
+				"text": "Ramette"
+				"$buttonGroup": new FormReference( "groupType" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cbCouleurItemStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 6
+				"row": 6
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "radioButtonStylo"
+				"text": "Stylo"
+				"$buttonGroup": new FormReference( "groupType" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cbCouleurItemStateChanged", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "radioButtonStyloMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 7
+				"row": 6
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblGrammage"
+				"text": "Grammage"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox80"
+				"text": "80 Grammes"
+				"foreground": #ColorUIResource0
+				"$buttonGroup": new FormReference( "grammageGroup" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cbCouleurItemStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 6
+				"row": 7
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox100"
+				"text": "100 Gramees"
+				"foreground": #ColorUIResource0
+				"$buttonGroup": new FormReference( "grammageGroup" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cbCouleurItemStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 7
+				"row": 7
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCouleur"
+				"text": "Couleur"
+				"foreground": sfield java.awt.Color red
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 6, false )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 8
+				"hSizePolicy": 1
+				"vSizePolicy": 1
+				"indent": 0
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cbCouleur"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: " "
+					addElement( " " )
+					addElement( "Noir" )
+					addElement( "Blanc" )
+					addElement( "Rouge" )
+					addElement( "Orange" )
+					addElement( "Jaune" )
+					addElement( "Bleu" )
+					addElement( "Vert" )
+					addElement( "Marron" )
+					addElement( "Rose" )
+				}
+				addEvent( new FormEvent( "java.awt.event.ItemListener", "itemStateChanged", "cbCouleurItemStateChanged", true ) )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 6
+				"row": 8
+				"colSpan": 2
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnBack"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/fr/eni/papeterie/ihm/img/Back24.gif" )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 4
+				"row": 9
+				"fill": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnNew"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/fr/eni/papeterie/ihm/img/New24.gif" )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 5
+				"row": 9
+				"fill": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSave"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/fr/eni/papeterie/ihm/img/Save24.gif" )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 6
+				"row": 9
+				"fill": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnDelete"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/fr/eni/papeterie/ihm/img/Delete24.gif" )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 7
+				"row": 9
+				"fill": 3
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnForward"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/fr/eni/papeterie/ihm/img/Forward24.gif" )
+			}, new FormLayoutConstraints( class com.intellij.uiDesigner.core.GridConstraints ) {
+				"column": 8
+				"row": 9
+				"fill": 3
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 185, 105 )
+			"size": new java.awt.Dimension( 1090, 645 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "groupType"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 766 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "grammageGroup"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 826 )
+		} )
+	}
+}
